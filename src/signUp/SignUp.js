@@ -8,7 +8,7 @@ import auth from '@react-native-firebase/auth';
 
 
 
-function SignUp({navigation}) {
+function SignUp({ navigation }) {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('');
 
@@ -29,7 +29,7 @@ function SignUp({navigation}) {
           navigation.navigate('Login');
 
 
-      }
+        }
         alert("SignUp DONE ")
 
         setEmail('')
@@ -55,6 +55,7 @@ function SignUp({navigation}) {
         value={email}
         placeholder='Email'
         style={{ color: "black" }}
+        placeholderTextColor={'black'}
 
         onChangeText={text => setEmail(text)}
       />
@@ -62,6 +63,7 @@ function SignUp({navigation}) {
         placeholder='Password'
         value={password}
         style={{ color: "black" }}
+        placeholderTextColor={'black'}
 
 
         onChangeText={text => setPassword(text)}

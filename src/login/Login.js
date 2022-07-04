@@ -60,7 +60,7 @@ function Login({ navigation }) {
 
     return (
         <View>
-            <TextInput
+                    <TextInput
                 value={email}
                 placeholder='Email'
                 placeholderTextColor={'black'}
